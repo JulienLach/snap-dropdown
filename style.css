@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding-top: 2em;
     padding-bottom: 4em;
-    max-width: 90%;
+    max-width: 90vw;
     margin: auto;
 }
 
@@ -84,10 +84,57 @@ body {
     font-size: 15px;
 }
 
+/* NAVBAR DROPDOWN MENU */
 
-/* SUB MENU */
+.dropdown-menu {
+    color: hsl(0, 0%, 41%);
+    background-color: #FFF;
+    border-radius: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 160px;
+    position: absolute;
+    /* margin-top: 1em; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: none;
+}
+
+.navbar .main-menu .dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.navbar .main-menu .dropdown-menu ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4em;
+    margin-right: auto;
+    padding-left: 1.2em;
+}
+
+.navbar .main-menu ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul li img {
+    width: 15px;
+}
 
 
+
+
+
+/* SUB MENU MOBILE */
+
+.icon-menu {
+    display: none;
+}
+
+.icon-close {
+    display: none;
+}
 
 
 
@@ -170,6 +217,43 @@ body {
 
 /* MEDIA QUERIES */
 
+@media(max-width:950px) {
+
+
+    /* NAVBAR */
+
+    .navbar .container .main-menu {
+        display: none;
+    }
+
+    /* SUB-MENU */
+
+    .icon-menu {
+        display: block;
+    }
+
+    .container-md {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    /* HERO SECTION */
+
+    .hero-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* IMAGES */
+
+    .img-desktop {
+        display: none;
+    }
+
+}
+
+
 @media(max-width:450px) {
 
 
@@ -188,6 +272,17 @@ body {
         margin: auto;
     }
 
+
+
+
+
+    /* SUB-MENU */
+
+    .icon-menu {
+        display: block;
+    }
+
+
     /* HERO SECTION */
 
     .hero-content {
@@ -197,7 +292,17 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2.2em;
+        font-size: 2.4em;
+    }
+
+    .hero-content .hero-btn {
+        margin: auto;
+        width: 40%;
+    }
+
+    .hero-content .hero-btn:hover {
+        margin: auto;
+        width: 40%;
     }
 
 
