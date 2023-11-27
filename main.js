@@ -30,4 +30,22 @@ document.addEventListener('DOMContentLoaded', function () { //initier la fonctio
     );
 
 
+    const companyMobileMenu = document.querySelector('.company');
+    const featuresMobileMenu = document.querySelector('.features');
+    const dropdownMobileMenu1 = document.querySelector('.dropdown-mobile-menu1');
+    const dropdownMobileMenu2 = document.querySelector('.dropdown-mobile-menu2');
+
+
+    companyMobileMenu.addEventListener('click', () => {
+        dropdownMobileMenu1.classList.toggle('active');
+    });
+
+    featuresMobileMenu.addEventListener('click', () => {
+        dropdownMobileMenu2.classList.toggle('active');
+    });
+
+
+
+
+
 });

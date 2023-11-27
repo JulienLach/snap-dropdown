@@ -205,6 +205,42 @@ body {
 }
 
 
+/* DROPDOWN MENU MOBILE */
+
+.mobile-menu ul li .dropdown-mobile-menu1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: none;
+}
+
+.mobile-menu ul li .dropdown-mobile-menu1.active {
+    display: block;
+}
+
+
+.mobile-menu ul li .dropdown-mobile-menu2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: none;
+}
+
+.mobile-menu ul li .dropdown-mobile-menu2.active {
+    display: block;
+}
+
+.mobile-menu ul li .dropdown-mobile-menu2 ul li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.mobile-menu ul li .dropdown-mobile-menu2 ul li img {
+    align-self: start;
+    height: 20px;
+}
+
+
+
 /* HERO SECTION */
 
 .container-md {
