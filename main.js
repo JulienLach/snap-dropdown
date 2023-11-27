@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () { //initier la fonctio
         iconClose.style.display = 'block';
     });
 
-    iconClose.addEventListener('click', function () {  //première fonction quand je clique sur l'icone hamburger
+    iconClose.addEventListener('click', function () {  //afficher l'icone croix
 
         iconMenu.style.display = 'block';
         iconClose.style.display = 'none';
