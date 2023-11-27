@@ -16,8 +16,18 @@ document.addEventListener('DOMContentLoaded', function () { //initier la fonctio
     });
 
 
+    const iconMobileMenu = document.querySelector('.icon-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
+    iconMobileMenu.addEventListener('click', () =>
+        mobileMenu.classList.toggle('active')
 
+    );
+
+    iconClose.addEventListener('click', () =>
+        mobileMenu.classList.toggle('active')
+
+    );
 
 
 });
