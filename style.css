@@ -188,6 +188,22 @@ body {
     gap: 0.7em;
 }
 
+.mobile-links ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile-links .nav-btn {
+    width: 220px;
+}
+
+.mobile-menu ul li .login-mobile {
+    margin: auto;
+    font-size: 16px;
+}
+
 
 /* HERO SECTION */
 
